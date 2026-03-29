@@ -22,6 +22,7 @@
       "@/*": ["./app/*"]
     }
   },
+  "types": ["vitest/globals", "@testing-library/jest-dom"],
   "include": [
     "next-env.d.ts",
     "**/*.ts",
@@ -29,7 +30,8 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts",
-    "lint-staged.config.js"
+    "lint-staged.config.js",
+    "test/setup.ts"
   ],
   "exclude": ["node_modules"]
 }

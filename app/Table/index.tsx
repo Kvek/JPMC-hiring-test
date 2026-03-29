@@ -66,7 +66,7 @@ type TableProps = {
   data: Instrument[];
 };
 
-export const Table = ({ data = [] }: TableProps) => {
+export const Table = ({ data }: TableProps) => {
   const DEFAULT_SORT_ORDER: Record<SortKey, Direction> = {
     assetClass: ASC,
     price: DESC,

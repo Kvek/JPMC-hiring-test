@@ -12,7 +12,13 @@ export default defineConfig({
     coverage: {
       provider: "v8",
       reporter: ["text", "lcov", "html"],
-      exclude: ["node_modules", ".next", "*.config.*", "src/test/setup.ts"],
+      exclude: [
+        "node_modules",
+        ".next",
+        "*.config.*",
+        "src/test/setup.ts",
+        "*.json",
+      ],
     },
   },
   resolve: {
